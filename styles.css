@@ -1,0 +1,329 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+
+
+body {
+    font-family: "Bugvirus", Georgia;
+    margin: 0;
+}
+
+
+#frame {
+    width: 769px;
+    height: 1025px;
+    margin: 0 auto;
+}
+
+#holder {
+    background-image: url(gamebg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    height: 1025px;
+}
+
+
+
+/* Style for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.game {
+    flex: 1;
+}
+
+.instructions {
+    text-align: center;
+    position: relative;
+}
+
+.DMS {
+    width: 479px;
+    display: block;
+    border-radius: 10px;
+    height: 90px;
+}
+
+.DMS img {
+    width: 80%;
+}
+
+
+.textHeader {
+    width: 630px;
+
+}
+
+.mainGame {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    height: 240px;
+}
+
+.progress-bar {
+    top: 0px;
+    width: 500px;
+    height: 41px;
+    position: relative;
+    left: -34px;
+
+}
+
+#BarHolder {
+    width: 500px;
+    height: 33px;
+    margin-top: 8px;
+    position: absolute;
+    overflow: hidden;
+    text-align: left;
+    margin-left: 14px;
+}
+
+#tapCount {
+    z-index: 3;
+    top: -66px;
+    position: relative;
+    left: -21px;
+    font-size: 19px;
+}
+
+
+.horizontal-progress {
+    height: 42px;
+    background-color: #ea3323;
+    transition: width 0.2s;
+    max-width: 474px;
+    position: relative;
+    top: -2px;
+    overflow: hidden;
+    z-index: 2;
+    width: 0px;
+
+}
+
+
+#progressBarImage {
+    width: 500px;
+    height: 100%;
+}
+
+
+.progress-bar-image-container {}
+
+/*.progress-bar-image-container {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    top: 0;
+    left: 100;
+    z-index: -1; */
+/* Place the image container behind the progress bar */
+/*
+}*/
+
+/*#progressBarImage {
+    width: 100%; */
+/**/
+/* Set the width to 100% to fill the container */
+/**/
+/*
+    height: auto;
+    margin-bottom: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 0;
+    left: 0;
+}*/
+
+
+.popup {
+    visibility: visible;
+    position: flex;
+    bottom: 515px;
+    left: 440px;
+    width: 100%;
+    height: 10%;
+    /*background-color: blue;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContainer {
+    text-align: center;
+}
+
+.startpopupText {
+    color: #dab16f;
+    font-size: 24px;
+}
+
+.popupText {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    width: 290px;
+}
+
+.promo {
+    height: 100px;
+    width: 100%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    position: relative;
+    margin-top: 11px;
+
+}
+
+#offer1 {
+    width: 100px;
+    position: relative;
+    left: 40px;
+    top: -35px;
+}
+
+#offer2 {
+    width: 100px;
+    left: 48px;
+    top: -35px;
+    position: relative;
+}
+
+#offer3 {
+    width: 125px;
+    left: 60px;
+    top: -35px;
+    position: relative;
+}
+
+#offer4 {
+    width: 140px;
+    position: relative;
+    left: 90px;
+    top: -30px;
+    pointer-events: none;
+}
+
+#tapButton {
+    /*pointer-events:none;*/
+}
+
+#ButtonHolder {
+    height: 100px;
+    /* margin: 0 230px; */
+    text-align: center;
+    padding: 0 120px;
+}
+
+.startGamebutton {
+
+    display: inline-block;
+}
+
+.reloadButton {
+    display: inline-block;
+}
+
+#startButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    /*     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+    /* margin-bottom:350px;*/
+    /*  position: relative;
+        top: 105px;
+        right: 0px;*/
+
+}
+
+/* Additional styles for the button image */
+#startButton img {
+    width: 170px;
+    /* Adjust the width as needed */
+}
+
+#playAgainButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+#playAgainButton img {
+    width: 170px;
+}
+
+.milestone-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #008000;
+    /* Green background color */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this CSS */
+.clock-image-container {
+    position: relative;
+    text-align: center;
+}
+
+#clockImage {
+    width: 30%;
+    /* Adjust the width of the clock image as needed */
+    height: auto;
+    margin-bottom: 0px;
+    /* Add space between the clock image and timer overlay */
+}
+
+
+/*.progressBar-container{
+    position: relative;
+    text-align: center;
+    margin-bottom: 220px;
+
+}*/
+
+#timerOverlay {
+    position: absolute;
+    top: -20px;
+    left: 389px;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    /* Adjust the font size as needed */
+}
+
+/* Add this CSS for the play button */
+#playButton {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: auto;
+    cursor: pointer;
+    /* Add a pointer cursor to indicate it's clickable */
+}
+
+.instructions img {
+    width: 50%;
+    margin: 0 auto;
+}

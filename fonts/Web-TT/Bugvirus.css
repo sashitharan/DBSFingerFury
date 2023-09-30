@@ -1,0 +1,12 @@
+/* Webfont: Bugvirus-Regular */@font-face {
+    font-family: 'Bugvirus';
+    src: url('Bugvirus.eot'); /* IE9 Compat Modes */
+    src: url('Bugvirus.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Bugvirus.woff') format('woff'), /* Modern Browsers */
+         url('Bugvirus.woff2') format('woff2'), /* Modern Browsers */
+         url('Bugvirus.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

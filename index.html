@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DMS Finger Fury</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesButton.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="fonts/Web-TT/Bugvirus.css">
+</head>
+
+<body>
+    <div id="frame" align="center">
+        <div id="holder" align="center">
+
+            <div class="DMS"><img src="DMSnewLogo.png" /></div>
+
+            <div class="textHeader">
+                <h1>Tap the chest furiously for 60s and claim up to S$5,000 ad credits</h1>
+            </div>
+
+            <div class="clock">
+                <div class="clock-image-container">
+                    <img src="clock.png" alt="Clock Image" id="clockImage">
+                    <p id="timerOverlay">30</p>
+                </div>
+            </div>
+
+            <div class="promo">
+                <img id="offer1" src="45off.png">
+                <img id="offer2" src="60off.png">
+                <img id="offer3" src="2koff.png">
+                <img id="offer4" src="5koff.png">
+            </div>
+
+            <div class="progress-bar">
+                <div id="BarHolder">
+                    <div id="horizontalProgressBar" class="horizontal-progress"></div>
+                </div>
+                <div class="progress-bar-image-container">
+                    <img src="emptybar.png" alt="Progress Bar Image" id="progressBarImage">
+                </div>
+            </div>
+
+            <div class="mainGame">
+                <p id="tapCount">Taps: 0</p>
+
+                <div class="game" style="height:184px;">
+                    <img id="tapButton" src="closechest.png" alt="Tap Me!" disabled
+                        style="width: 50%; position: relative; top:-105px;" draggable="false">
+                    <audio id="tapSound" src="jump.wav"></audio>
+
+                </div>
+            </div>
+
+            <div id="ButtonHolder">
+                <div class="startGamebutton">
+                    <button id="startButton">
+                        <img src="play.png" alt="Start Game"></button>
+                </div>
+
+                <div class="reloadButton">
+                    <button id="playAgainButton">
+                        <img src="restart.png" alt="reload Game"></button>
+                </div>
+            </div>
+            <div class="instructions">
+                <img src="ruleContainer.png" disabled alt="Image" id="messageImage">
+                <div class="text-overlay">
+                    <p></p>
+                    <div id="resultPopup" class="popup">
+                        <div class="popupContainer" id="resultPopupContainer">
+                            <p class="popupText" id="popupText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Background music toggle</h3>
+            <div class="toggleWrapper">
+                <input type="checkbox" name="toggle1" class="mobileToggle" id="toggle1" checked>
+                <label for="toggle1"></label>
+                <div class="audio-container">
+                    <audio id="backgroundMusic" autoplay loop>
+                        <source src="Whentapping.mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
